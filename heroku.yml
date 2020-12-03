@@ -1,0 +1,13 @@
+setup:
+ addons:
+   - plan: heroku-postgresql
+build:
+ docker:
+   kafka-salesforce: C:\Users\950027\Desktop\Heroku-cer\Kafka-clone\Kafka-Producer\Dockerfile
+ config:
+   REQUIREMENTS_FILENAME: heroku.yml
+release:
+ image: web
+ command:
+run:
+ web: 
